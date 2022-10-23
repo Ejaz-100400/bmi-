@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BMI CALCULATOR</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+    </style>
+  </head>
+  <body class="">
+    <div class="container bmibg">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">BMI CALCULATOR</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Height</span>
+                  <input type="number" class="form-control" id="height" placeholder="Enter your height in cm/feet">
+                  <select id="select-height"s>
+                    <option value="unit">unit</option>
+                    <option value="inches">in</option>
+                    <option value="cm">cm</option>
+                  </select>  
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Weight</span>
+                  <input type="number" class="form-control" id="weight" placeholder="Enter your weight in kg/lbs">
+                  <select id="select-weight">
+                    <option value="unit">unit</option>
+                    <option value="kgs">kg</option>
+                    <option value="lbs">lbs</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <!-- <span class="input-group-addon">Gender</span> -->
+                <!-- <input type="radio" class="form-control" id="age" placeholder=""> -->
+                <!-- <select class="form-control" id="gender">
+                  <option value ="Male">Male</option>
+                  <option value="Female">Female</option> -->
+                </select> 
+               </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="submit">
+              </div>
+            </form>
+            
+            <!-- LOADER -->
+            
+             <div id="loading">
+            <img src="img//loading-unscreen.gif" alt="">
+            </div>
+            
+            <!-- RESULTS -->
+            
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">BMI Index</span>
+                  <input type="number" class="form-control" id="bmi-index" disabled>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">status</span>
+                  <input type="text" class="form-control" id="status" disabled>
+                </div>
+              </div>
+              <!-- <div class="form-group" >
+                <div class="input-group" style="max-height: max-contents;">
+                  <span class="input-group-addon">Tips & advice</span>
+                  <input type="text" class="form-control" id="tips"  style="height:150px;border-radius:5px;"disabled>
+                </div> -->
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Go Back" class="goback">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="style.css"></script>
+  </body>
+</html>
